@@ -147,7 +147,7 @@ header{
   transition: all linear 1s;
   /* position: relative; */
   /* top:-8em; */
-
+ cursor: pointer;
 }
 .menu:hover{
   background-color: #9e9e9e;
@@ -164,7 +164,11 @@ header{
   padding: 1em;
   position: relative;
   /* top:-8em; */
-  font-family: IvyPresto;
-  transition: all linear 1s;
+  /* font-family: IvyPresto; */
+  transition: all linear 2s;
   display: none;
+  cursor: pointer;
+}
+span.mendet-hover:hover{
+  color: #ff5757;
 }
