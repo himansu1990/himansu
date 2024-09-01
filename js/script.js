@@ -23,8 +23,7 @@ dets.addEventListener('mouseleave', function(){
 
 //Create click event for menu
 let siteMenu = 0
-
-menu.addEventListener('click', function(){
+function openPopUp(){
     if(siteMenu == 0){
         menuDet.style.display = 'block'
         menuDet.style.marginTop = '-8em'
@@ -37,5 +36,9 @@ menu.addEventListener('click', function(){
         menu.innerHTML = 'Menu'
         siteMenu = 0
     }
-
+}
+menu.addEventListener('click', function(){
+    setTimeout(() => {
+        openPopUp()
+    }, 200);
 })
